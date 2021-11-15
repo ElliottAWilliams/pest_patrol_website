@@ -2,8 +2,9 @@
 <html>
 
 <head>
+
     <meta http-equiv="X-US-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <meta charset="utf-8">
     <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,18 +21,19 @@
 
 <body>
     <!-- HEADER -->
-        <nav class="clearfix">
-            <div class="row limited">
-                <button id="hamburgerBtn">&#9776;</button>
-                <ul id="primaryNav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    
+    <nav class="nav">
+        <div>
+            <button id="hamburgerBtn">&#9776;</button>
+            <div class="menu-container"></div>
+            <ul id="primaryNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- HEADER -->
 
     <!-- HERO -->
@@ -40,7 +42,7 @@
         <div class="hero-content">
             <h2 class="hero-title">Get A Head Start with Winter Service</h2>
             <h3 class="hero-subtitle">20% Off Your First Treatment</h3>
-            <button type="button" class="hero-button" onclick="#">Get a Quote Today!</button>
+            <button type="button" class="hero-button">Get a Quote Today!</button>
         </div>
     </section>
     <!-- HERO -->
@@ -60,8 +62,8 @@
 
 
 
-
-    <main class="cards">
+<section class="card-section">
+    <section class="cards">
         <article class="card">
             <img src="img/ants_1.jpg" alt="Pest Control">
             <div class="text">
@@ -69,9 +71,9 @@
                 <p>XXXX</p>
                 <button>Quote</button>
             </div>
-
         </article>
-        <main class="cards">
+        </section>
+        <section class="cards">
             <article class="card">
                 <img src="img/ants_1.jpg" alt="Pest Control">
                 <div class="text">
@@ -79,43 +81,24 @@
                     <p>XXXX</p>
                     <button>Quote</button>
                 </div>
-    
+
             </article>
-            <main class="cards">
-                <article class="card">
-                    <img src="img/ants_1.jpg" alt="Pest Control">
-                    <div class="text">
-                        <h3>Pest Control</h3>
-                        <p>XXXX</p>
-                        <button>Quote</button>
-                    </div>
-        
-                </article>
+        </section>
+        <section class="cards">
+            <article class="card">
+                <img src="img/ants_1.jpg" alt="Pest Control">
+                <div class="text">
+                    <h3>Pest Control</h3>
+                    <p>XXXX</p>
+                    <button>Quote</button>
+                </div>
+            </article>
+        </section>
+
+    </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </main>
-   
-        
 
     <!-- SERVICES -->
 
@@ -124,46 +107,48 @@
     <!-- QUOTE FORM -->
 
     <!-- FOOTER -->
- 
-<footer>
-    <div class="footer">
+
+    <footer>
+        <div class="footer">
             <div class="footer-heading footer-1">
-                    <h2>More Links</h2>
-                    <a href="#">Login</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Videos</a>
-                    <a href="#">FAQ</a>
+                <h2>More Links</h2>
+                <a href="#">Login</a>
+                <a href="#">Blog</a>
+                <a href="#">Videos</a>
+                <a href="#">FAQ</a>
             </div>
             <div class="footer-heading footer-2">
                 <h2>Contact Us</h2>
                 <a href="#">Jobs</a>
                 <a href="#">Support</a>
-                <a href="#">Sponsors</div>
+                <a href="#">Sponsors
+            </div>
 
-                    <div class="footer-heading footer-1">
-                        <h2>Social Media</h2>
-                        <a href="#">Facebook</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Instagram</a>
-                        
-                </div>
+            <div class="footer-heading footer-1">
+                <h2>Social Media</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
 
-                <div class="footer-email-form">
-                    <h2>Join our newsletter</h2>
-                    <input type="email" placeholder="Enter your email address" id="footer-email">
-                    <input type="submit"  value="Sign Up"
-                    id="footer-email-btn">
-                </div>
+            </div>
+
+            <div class="footer-email-form">
+                <h2 class="join-news">Join our newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Sign Up" id="footer-email-btn">
             </div>
         </div>
-    </div>
 
 
 
-</footer>
+
+
+    </footer>
 
 
 
 
 </body>
+
 </html>
+<script src="./javascript/script.js"></script>
