@@ -1,0 +1,2 @@
+
+My project is a sample Pest Control website. Like most pest control companies, Pest Patrol has several different services for specific issues. I have created a hamburger menu feature, that displays a menu when clicked. I have create a "Get a Quote!" section at the button using javascript that displays a service quote based on square footage of a yard or house. I have also used flexbox to organize a lot of my content including the the About Me Section and the Footer.

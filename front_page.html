@@ -75,9 +75,9 @@
         </section>
         <section class="cards">
             <article class="card">
-                <img src="img/ants_1.jpg" alt="Pest Control">
+                <img src="img/mouse.jpg" alt="Rodent Baiting">
                 <div class="text">
-                    <h3>Pest Control</h3>
+                    <h3>Rodent Baiting</h3>
                     <p>XXXX</p>
                     <button>Quote</button>
                 </div>
@@ -86,9 +86,9 @@
         </section>
         <section class="cards">
             <article class="card">
-                <img src="img/ants_1.jpg" alt="Pest Control">
+                <img src="img/tick.jpg" alt="Flea, Tick, Mosquito">
                 <div class="text">
-                    <h3>Pest Control</h3>
+                    <h3>Flea, Tick, and Mosquito</h3>
                     <p>XXXX</p>
                     <button>Quote</button>
                 </div>
@@ -139,7 +139,39 @@
             </div>
         </div>
 
-
+        <div class="calc-quote">
+            <h2>Get a Quote Now!</h2>
+            <form>
+              <label for="sqFootage">Enter Square Footage:</label>
+              <input
+                type="number"
+                id="sqFootage"
+                name="sqFootage"
+                placeholder="1800"
+              />
+              <input type="button" id="btn-sqFootage" value="Submit" />
+            </form>
+            <script>
+              document
+                .getElementById("btn-sqFootage")
+                .addEventListener("click", function () {
+                  var sqFootage = document.getElementById("sqFootage").value;
+                  console.log(sqFootage);
+    
+                  var estimatedCost = sqFootage * 2;
+                  var formattedCost = estimatedCost.toFixed(2);
+    
+                  if (!sqFootage) {
+                    alert("Please enter the square footage of your home!");
+                  } else {
+                    alert(
+                      "The estimated cost of pest control services for your home is: $" +
+                        formattedCost
+                    );
+                  }
+                });
+            </script>
+          </div>
 
 
 
@@ -151,4 +183,4 @@
 </body>
 
 </html>
-<script src="./javascript/script.js"></script>
+<script src="javascript/script.js"></script>
