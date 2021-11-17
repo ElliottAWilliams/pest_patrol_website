@@ -213,6 +213,7 @@ nav li:hover {
     display: flex;
     background-color: #6FD08C;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .cards {
@@ -347,3 +348,25 @@ nav li:hover {
     
       
 
+      @media screen and (max-width: 992px) {
+        .cards {
+          width: 50%;
+        }
+
+
+        
+      }
+
+      @media screen and (max-width: 600px) {
+        .cards {
+          width: 100%;
+        }
+        .footer {
+          display: none;
+      } 
+
+      .hero-button {
+          margin: 0%;
+      }
+    }
+     
